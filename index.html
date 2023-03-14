@@ -26,7 +26,7 @@
             <nav class="nav">
                 <a class="nav-logo" href="./index.html">Web<span class="logo-nav-st">Studio</span></a>
                 <ul class="nav-list">
-                    <li><a class="nav-item" href="./index.html">Studio</a></li>
+                    <li><a class="nav-item active" href="./index.html">Studio</a></li>
                     <li><a class="nav-item" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-item" href="">Contacts</a></li>
                 </ul>
@@ -53,7 +53,7 @@
         <section class="hero-image">
             <div class="container">
                 <h1 class="main-title">Effective Solutions for Your Business</h1>
-                <button class="button" type="button">Order Service</button>
+                <button data-modal-open class="button" type="button">Order Service</button>
             </div>
         </section>
 
@@ -281,42 +281,50 @@
             </div>
         </section>
 
+
+        <!-- Section 4  -->
         <section class="section-four">
             <div class="container">
                 <h2 class="sec-four-title">Customers</h2>
                 <ul class="sec-four-list">
                     <li class="sec-four-item">
-                        <a href="" class="sec-four-link"> <svg class="sec-four-icon" width="104" height="56">
+                        <a href="" class="sec-four-link"> 
+                            <svg class="sec-four-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-1">
                                 </use>
                             </svg></a>
                     </li>
                     <li class="sec-four-item">
-                        <a href="" class="sec-four-link"> <svg class="sec-four-icon" width="104" height="56">
+                        <a href="" class="sec-four-link"> 
+                            <svg class="sec-four-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-2">
                                 </use>
                             </svg></a>
                     </li>
                     <li class="sec-four-item">
-                        <a href="" class="sec-four-link"><svg class="sec-four-icon" width="104" height="56">
+                        <a href="" class="sec-four-link">
+                            <svg class="sec-four-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-3">
                                 </use>
                             </svg></a>
                     </li>
                     <li class="sec-four-item">
-                        <a href="" class="sec-four-link"><svg class="sec-four-icon" width="104" height="56">
+                        <a href="" class="sec-four-link">
+                            <svg class="sec-four-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-4">
                                 </use>
                             </svg></a>
                     </li>
                     <li class="sec-four-item">
-                        <a href="" class="sec-four-link"><svg class="sec-four-icon" width="104" height="56">
+                        <a href="" class="sec-four-link">
+                            <svg class="sec-four-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-5">
                                 </use>
                             </svg></a>
                     </li>
                     <li class="sec-four-item">
-                        <a href="" class="sec-four-link"><svg class="sec-four-icon" width="104" height="56">
+                        <a href="" class="sec-four-link">
+                            <svg class="sec-four-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-6">
                                 </use>
                             </svg></a>
@@ -370,5 +378,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal  -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+        <button data-modal-close type="button" class="modal-close">
+            <svg class="modal-btn-close" width="8" height="8" >
+                <use href="./images/icons.svg#x"></use>
+            </svg>
+        </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
